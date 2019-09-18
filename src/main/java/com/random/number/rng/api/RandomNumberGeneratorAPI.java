@@ -17,5 +17,13 @@ public interface RandomNumberGeneratorAPI {
 	 */
 	@GetMapping("/randomnumber")
 	public ResponseEntity<Integer> getRandomNumber() throws Exception;
+	
+	/**
+	 * API to return current time
+	 * @return ResponseEntity
+	 * @throws Exception
+	 */
+	@GetMapping("/currenttime")
+	public ResponseEntity<String> getCurrentTime() throws Exception;
 
 }
